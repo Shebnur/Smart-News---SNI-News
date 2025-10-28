@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Search, Filter, TrendingUp, Globe, BookOpen, DollarSign, Zap, Shield, Heart, Car, Clock, Bell, MessageSquare, ChevronDown, X, Check, ArrowRight, BarChart3, Brain, Mail, Calendar, AlertCircle, TrendingDown, Minus, MapPin, CheckSquare, Square, Bookmark, Share2, ExternalLink, Eye, Sparkles, Copy, User, Home, FileText, Settings, Menu, Languages, Download } from 'lucide-react';
+import { Search, Filter, TrendingUp, Globe, BookOpen, DollarSign, Zap, Shield, Heart, Car, Clock, Bell, MessageSquare, ChevronDown, X, Check, ArrowRight, BarChart3, Brain, Calendar, AlertCircle, MapPin, CheckSquare, Bookmark, Share2, Eye, Sparkles, Copy, User, Home, FileText, Menu, Languages, Download } from 'lucide-react';
 
 const App = () => {
   // Main state
@@ -1104,6 +1104,7 @@ const App = () => {
   useEffect(() => {
     setNews(sampleNews);
     setFilteredNews(sampleNews);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Apply filters with proper OR logic - FIXED
